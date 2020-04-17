@@ -37,12 +37,12 @@
 				<key>1</key>
 				<dict>
 					<key>name</key>
-					<string>control.log4jview</string>
+					<string>entity.exception.log4jview</string>
 				</dict>
 				<key>2</key>
 				<dict>
 					<key>name</key>
-					<string>entity.error.log4jview</string>
+					<string>entity.exception.class.log4jview</string>
 				</dict>
 				<key>3</key>
 				<dict>
@@ -53,7 +53,7 @@
 			<key>comment</key>
 			<string>exception jboss</string>
 			<key>match</key>
-			<string>^([a-zA-Z\s]*)(.*Exception\:)(\s*.*)$</string>
+			<string>(Exception\:)(\s*.+?\:)(\s*.*)$</string>
 			<key>name</key>
 			<string>string.quoted.log4jview</string>
 		</dict>
@@ -68,12 +68,38 @@
 				<key>2</key>
 				<dict>
 					<key>name</key>
-					<string>entity.warn.log4jview</string>
+					<string>entity.exception.class.log4jview</string>
 				</dict>
 				<key>3</key>
 				<dict>
 					<key>name</key>
-					<string>entity.warn.message.log4jview</string>
+					<string>control.log4jview</string>
+				</dict>
+			</dict>
+			<key>comment</key>
+			<string>exception jboss</string>
+			<key>match</key>
+			<string>(Caused by\:)(\s*.+?\:)(\s*.*)$</string>
+			<key>name</key>
+			<string>string.quoted.log4jview</string>
+		</dict>
+		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>control.log4jview</string>
+				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>entity.exception.trace.at.log4jview</string>
+				</dict>
+				<key>3</key>
+				<dict>
+					<key>name</key>
+					<string>entity.exception.trace.class.log4jview</string>
 				</dict>
 				<key>4</key>
 				<dict>
@@ -104,7 +130,7 @@
 				<key>3</key>
 				<dict>
 					<key>name</key>
-					<string>entity.warn.log4jview</string>
+					<string>entity.warn.class.log4jview</string>
 				</dict>
 				<key>4</key>
 				<dict>
@@ -115,7 +141,7 @@
 			<key>comment</key>
 			<string>warn jboss</string>
 			<key>match</key>
-			<string>^(.*)(WARN)\s*(\[.*\])\s*(.*)$</string>
+			<string>^(.*)(WARN\s*)(.+?\:)(\s*.*)$</string>
 			<key>name</key>
 			<string>string.quoted.log4jview</string>
 		</dict>
@@ -135,7 +161,7 @@
 				<key>3</key>
 				<dict>
 					<key>name</key>
-					<string>entity.info.log4jview</string>
+					<string>entity.info.class.log4jview</string>
 				</dict>
 				<key>4</key>
 				<dict>
@@ -146,7 +172,7 @@
 			<key>comment</key>
 			<string>info jboss</string>
 			<key>match</key>
-			<string>^(.*)(INFO)\s*(\[.*\])\s*(.*)$</string>
+			<string>^(.*)(INFO\s*)(.+?\:)(\s*.*)$</string>
 			<key>name</key>
 			<string>string.quoted.log4jview</string>
 		</dict>
@@ -166,7 +192,7 @@
 				<key>3</key>
 				<dict>
 					<key>name</key>
-					<string>entity.error.log4jview</string>
+					<string>entity.error.class.log4jview</string>
 				</dict>
 				<key>4</key>
 				<dict>
@@ -177,7 +203,7 @@
 			<key>comment</key>
 			<string>error jboss</string>
 			<key>match</key>
-			<string>^(.*)(ERROR)\s*(\[.*\])\s*(.*)$</string>
+			<string>^(.*)(ERROR\s*)(.+?\:)(\s*.*)$</string>
 			<key>name</key>
 			<string>string.quoted.log4jview</string>
 		</dict>
@@ -197,7 +223,7 @@
 				<key>3</key>
 				<dict>
 					<key>name</key>
-					<string>entity.debug.log4jview</string>
+					<string>entity.debug.class.log4jview</string>
 				</dict>
 				<key>4</key>
 				<dict>
@@ -208,7 +234,7 @@
 			<key>comment</key>
 			<string>debug jboss</string>
 			<key>match</key>
-			<string>^(.*)(DEBUG)\s*(\[.*\])\s*(.*)$</string>
+			<string>^(.*)(DEBUG\s*)(.+?\:)(\s*.*)$</string>
 			<key>name</key>
 			<string>string.quoted.log4jview</string>
 		</dict>
@@ -223,7 +249,7 @@
 				<key>2</key>
 				<dict>
 					<key>name</key>
-					<string>entity.trace.log4jview</string>
+					<string>entity.trace.class.log4jview</string>
 				</dict>
 				<key>3</key>
 				<dict>
@@ -239,7 +265,7 @@
 			<key>comment</key>
 			<string>trace jboss</string>
 			<key>match</key>
-			<string>^(.*)(TRACE)\s*(\[.*\])\s*(.*)$</string>
+			<string>^(.*)(TRACE\s*)(.+?\:)(\s*.*)$</string>
 			<key>name</key>
 			<string>string.quoted.log4jview</string>
 		</dict>
@@ -259,7 +285,7 @@
 				<key>3</key>
 				<dict>
 					<key>name</key>
-					<string>entity.fatal.log4jview</string>
+					<string>entity.fatal.class.log4jview</string>
 				</dict>
 				<key>4</key>
 				<dict>
@@ -270,7 +296,7 @@
 			<key>comment</key>
 			<string>fatal jboss</string>
 			<key>match</key>
-			<string>^(.*)(FATAL)\s*(\[.*\])\s*(.*)$</string>
+			<string>^(.*)(FATAL\s*)(.+?\:)(\s*.*)$</string>
 			<key>name</key>
 			<string>string.quoted.log4jview</string>
 		</dict>

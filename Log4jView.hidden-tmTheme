@@ -38,6 +38,19 @@
 		</dict>
 		<dict>
 			<key>name</key>
+			<string>Log4jView TRACE class</string>
+			<key>scope</key>
+			<string>entity.trace.class.log4jview</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string></string>
+				<key>foreground</key>
+				<string>#D0D0D0</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
 			<string>Log4jView TRACE message</string>
 			<key>scope</key>
 			<string>entity.trace.message.log4jview</string>
@@ -46,7 +59,7 @@
 				<key>fontStyle</key>
 				<string></string>
 				<key>foreground</key>
-				<string>#C0C0C0</string>
+				<string>#B0B0B0</string>
 			</dict>
 		</dict>
 		<dict>
@@ -59,7 +72,20 @@
 				<key>fontStyle</key>
 				<string></string>
 				<key>foreground</key>
-				<string>#FF9900</string>
+				<string>#FFAA00</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Log4jView DEBUG class</string>
+			<key>scope</key>
+			<string>entity.debug.class.log4jview</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string></string>
+				<key>foreground</key>
+				<string>#DD8800</string>
 			</dict>
 		</dict>
 		<dict>
@@ -72,7 +98,7 @@
 				<key>fontStyle</key>
 				<string></string>
 				<key>foreground</key>
-				<string>#996600</string>
+				<string>#BB6600</string>
 			</dict>
 		</dict>
 		<dict>
@@ -90,6 +116,19 @@
 		</dict>
 		<dict>
 			<key>name</key>
+			<string>Log4jView INFO class</string>
+			<key>scope</key>
+			<string>entity.info.class.log4jview</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string></string>
+				<key>foreground</key>
+				<string>#22CC00</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
 			<string>Log4jView INFO message</string>
 			<key>scope</key>
 			<string>entity.info.message.log4jview</string>
@@ -98,7 +137,7 @@
 				<key>fontStyle</key>
 				<string></string>
 				<key>foreground</key>
-				<string>#339900</string>
+				<string>#449900</string>
 			</dict>
 		</dict>
 		<dict>
@@ -116,6 +155,19 @@
 		</dict>
 		<dict>
 			<key>name</key>
+			<string>Log4jView WARN class</string>
+			<key>scope</key>
+			<string>entity.warn.class.log4jview</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string></string>
+				<key>foreground</key>
+				<string>#FFDD00</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
 			<string>Log4jView WARN message</string>
 			<key>scope</key>
 			<string>entity.warn.message.log4jview</string>
@@ -124,7 +176,7 @@
 				<key>fontStyle</key>
 				<string></string>
 				<key>foreground</key>
-				<string>#FFCC00</string>
+				<string>#FFBB00</string>
 			</dict>
 		</dict>
 		<dict>
@@ -142,6 +194,19 @@
 		</dict>
 		<dict>
 			<key>name</key>
+			<string>Log4jView ERROR class</string>
+			<key>scope</key>
+			<string>entity.error.class.log4jview</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string></string>
+				<key>foreground</key>
+				<string>#DD0000</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
 			<string>Log4jView ERROR message</string>
 			<key>scope</key>
 			<string>entity.error.message.log4jview</string>
@@ -150,7 +215,7 @@
 				<key>fontStyle</key>
 				<string></string>
 				<key>foreground</key>
-				<string>#CC0000</string>
+				<string>#BB0000</string>
 			</dict>
 		</dict>
 		<dict>
@@ -168,6 +233,19 @@
 		</dict>
 		<dict>
 			<key>name</key>
+			<string>Log4jView FATAL class</string>
+			<key>scope</key>
+			<string>entity.fatal.message.log4jview</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string></string>
+				<key>foreground</key>
+				<string>#DD66FF</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
 			<string>Log4jView FATAL message</string>
 			<key>scope</key>
 			<string>entity.fatal.message.log4jview</string>
@@ -176,7 +254,7 @@
 				<key>fontStyle</key>
 				<string></string>
 				<key>foreground</key>
-				<string>#CC66FF</string>
+				<string>#BBCCFF</string>
 			</dict>
 		</dict>
 		<dict>
@@ -204,6 +282,58 @@
 
 				<key>foreground</key>
 				<string>#C0C0C0</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Log4jView Exception</string>
+			<key>scope</key>
+			<string>entity.exception.log4jview</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string></string>
+				<key>foreground</key>
+				<string>#FF0000</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Log4jView Exception class</string>
+			<key>scope</key>
+			<string>entity.exception.class.log4jview</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string></string>
+				<key>foreground</key>
+				<string>#CC0000</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Log4jView Exception at</string>
+			<key>scope</key>
+			<string>entity.exception.trace.at.log4jview</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string></string>
+				<key>foreground</key>
+				<string>#DDDD00</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Log4jView Exception at</string>
+			<key>scope</key>
+			<string>entity.exception.trace.class.log4jview</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string></string>
+				<key>foreground</key>
+				<string>#DDAA00</string>
 			</dict>
 		</dict>
 	</array>
