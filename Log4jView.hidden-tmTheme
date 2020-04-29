@@ -336,6 +336,63 @@
 				<string>#DDAA00</string>
 			</dict>
 		</dict>
+
+
+		<dict>
+			<key>name</key>
+			<string>Log4jView Crash comment</string>
+			<key>scope</key>
+			<string>crash.log4jview.comment</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string></string>
+				<key>foreground</key>
+				<string>#74705D</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Log4jView Crash trace Java interpreted</string>
+			<key>scope</key>
+			<string>crash.log4jview.tract.j</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string></string>
+				<key>foreground</key>
+				<string>#FFBB00</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Log4jView Crash trace Java interpreted</string>
+			<key>scope</key>
+			<string>crash.log4jview.tract.v</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string></string>
+				<key>foreground</key>
+				<string>#00BBFF</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Log4jView Crash trace native</string>
+			<key>scope</key>
+			<string>crash.log4jview.tract.c</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string></string>
+				<key>foreground</key>
+				<string>#00DDBB</string>
+			</dict>
+		</dict>
+		
+		
+		
 	</array>
 	<key>uuid</key>
 	<string>F96223EB-1AAB-4617-92F3-FA4D4F13DB08</string>

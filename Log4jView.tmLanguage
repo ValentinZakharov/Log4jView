@@ -300,6 +300,71 @@
 			<key>name</key>
 			<string>string.quoted.log4jview</string>
 		</dict>
+		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>crash.log4jview.comment</string>
+				</dict>
+			</dict>
+			<key>comment</key>
+			<string>comment</string>
+			<key>match</key>
+			<string>^(#.*)$</string>
+			<key>name</key>
+			<string>string.quoted.log4jview</string>
+		</dict>
+		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>crash.log4jview.tract.j</string>
+				</dict>
+			</dict>
+			<key>comment</key>
+			<string>comment</string>
+			<key>match</key>
+			<string>^(j\s\s.*)$</string>
+			<key>name</key>
+			<string>string.quoted.log4jview</string>
+		</dict>
+		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>crash.log4jview.tract.v</string>
+				</dict>
+			</dict>
+			<key>comment</key>
+			<string>comment</string>
+			<key>match</key>
+			<string>^(V\s\s.*|v\s\s.*)$</string>
+			<key>name</key>
+			<string>string.quoted.log4jview</string>
+		</dict>
+		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>crash.log4jview.tract.c</string>
+				</dict>
+			</dict>
+			<key>comment</key>
+			<string>comment</string>
+			<key>match</key>
+			<string>^(C\s\s.*)$</string>
+			<key>name</key>
+			<string>string.quoted.log4jview</string>
+		</dict>
+
 	</array>
 	<key>scopeName</key>
 	<string>text.log4jview</string>
